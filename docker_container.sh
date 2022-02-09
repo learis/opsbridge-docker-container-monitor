@@ -43,7 +43,7 @@ do
 			        IP: $IPADDRESS
 			        Hostname: $HOSTNAME
 
-			        $CONTAINER is DOWN on $HOSTNAME - $IPADDRESS" | mailx -v -s "$CONTAINER is DOWN on $HOSTNAME" -r "yaz@turktelekom.com.tr" -S smtp="10.234.204.10:587" unsal.erkal@partner.turktelekom.com.tr,emre.ozdemir2@partner.turktelekom.com.tr,tugrul.tuncer@partner.turktelekom.com.tr,oguzhan.ince@partner.turktelekom.com.tr,karabacak.mehmetbalkan@turktelekom.com.tr,cemre.mengu@ttgint.com,murat.bicakci@ttgint.com,halil.kural@ttgint.com,dogukan.tasdemir@ttgint.com,furkan.uyanik@ttgint.com 2> /dev/null
+			        $CONTAINER is DOWN on $HOSTNAME - $IPADDRESS" | mailx -v -s "$CONTAINER is DOWN on $HOSTNAME" -r "sendermail@mymail.com" -S smtp="10.234.204.10:587" receivermail@mymail.com 2> /dev/null
 
 			    else
 
@@ -58,7 +58,7 @@ do
 			        IP: $IPADDRESS
 			        Hostname: $HOSTNAME
 
-			        $CONTAINER is UP on $HOSTNAME - $IPADDRESS" | mailx -v -s "$CONTAINER is UP on $HOSTNAME" -r "yaz@turktelekom.com.tr" -S smtp="10.234.204.10:587" unsal.erkal@partner.turktelekom.com.tr,emre.ozdemir2@partner.turktelekom.com.tr,tugrul.tuncer@partner.turktelekom.com.tr,oguzhan.ince@partner.turktelekom.com.tr,karabacak.mehmetbalkan@turktelekom.com.tr,cemre.mengu@ttgint.com,murat.bicakci@ttgint.com,halil.kural@ttgint.com,dogukan.tasdemir@ttgint.com,furkan.uyanik@ttgint.com 2> /dev/null
+			        $CONTAINER is UP on $HOSTNAME - $IPADDRESS" | mailx -v -s "$CONTAINER is UP on $HOSTNAME" -r "sendermail@mymail.com" -S smtp="10.234.204.10:587" receivermail@mymail.com.tr 2> /dev/null
 
 			        break 
 		       	fi
